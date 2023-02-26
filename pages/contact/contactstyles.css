@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #03001c;
+  height: 100vh;
+  width: 100vw;
+  color: #e96b80;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  font-family: "Supreme", sans-serif;
+}
+
+.main {
+  position: relative;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 90%;
+  gap: 30px;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+#heading {
+  gap: 30px;
+  display: flex;
+  /* border: 2px solid red; */
+  font-family: "Clash Display", sans-serif;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#heading-text {
+  text-decoration: underline;
+  text-align: center;
+}
+#page-logo {
+  width: 70px;
+}
+#text {
+  width: 100%;
+  font-size: 22px;
+  font-family: "Supreme";
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03001c;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  gap: 10px;
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.preloader.fade {
+  opacity: 0;
+}
+#page-loader {
+  width: 100px;
+  position: relative;
+  bottom: 10px;
+}
+
+a.page-links {
+  text-decoration: none;
+  color: #e96b80;
+  opacity: 90%;
+}
+
+li.contact-options {
+  display: inline-block;
+  position: relative;
+  color: #e96b80;
+  text-decoration: none;
+}
+
+li.contact-options::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  bottom: -5px;
+  position: absolute;
+  background: #e96b80;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  opacity: 90%;
+}
+
+li.contact-options:hover::after {
+  width: 100%;
+  left: 0;
+  color: #e96b80;
+  opacity: 90%;
+}
