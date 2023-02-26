@@ -7,4 +7,5 @@ window.addEventListener("load", function () {
 
 function preLoader() {
   preloader.classList.toggle("fade");
+  preloader.style.zIndex = "-1";
 }
