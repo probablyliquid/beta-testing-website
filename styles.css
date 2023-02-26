@@ -12,9 +12,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.background_help {
-  /* border: 2px solid red; */
-}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -170,4 +168,23 @@ li.main-page-options:hover::after {
   left: 0;
   color: #e96b80;
   opacity: 90%;
+}
+
+/* Media Query for Desktop-Responsive Design (Note: this website was developed as mobile-first) */
+@media only screen and (min-device-width: 787px) {
+  #list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    top: -200px;
+  }
+  ul.tags {
+    position: relative;
+    top: -120px;
+  }
+  #subheader {
+    font-size: 70px;
+  }
 }
