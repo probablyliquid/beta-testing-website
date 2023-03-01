@@ -23,6 +23,7 @@
         src="../../resources/images/telephone-receiver_1f4de.png"
         alt="telephone"
       />
+      <p id="orientation-error"></p>
     </div>
     <div class="main" id="main">
       <div class="heading" id="heading">
@@ -48,6 +49,33 @@
             >
           </li>
         </ul>
+        <form
+          class="contact-form"
+          id="contact-form"
+          action="https://formspree.io/f/xbjeyjpv"
+          method="POST"
+        >
+          <h2 id="contact-text">Write me a message:</h2>
+          <input
+            type="text"
+            name="Name"
+            id="name-inp"
+            placeholder="Your Name"
+          />
+          <input
+            type="email"
+            name="Email"
+            id="email-inp"
+            placeholder="Enter your email"
+          />
+          <textarea
+            type="text"
+            name="Message"
+            id="body-inp"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="submit" class="send-btn" id="send-btn" value="Send" />
+        </form>
       </div>
     </div>
 

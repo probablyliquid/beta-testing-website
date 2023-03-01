@@ -79,10 +79,17 @@ body {
   bottom: 10px;
 }
 
+#list {
+  display: flex;
+  gap: 20px;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 500;
+}
 a.page-links {
   text-decoration: none;
   color: #e96b80;
   opacity: 90%;
+  font-size: 30px;
 }
 
 li.contact-options {
@@ -112,4 +119,93 @@ li.contact-options:hover::after {
   left: 0;
   color: #e96b80;
   opacity: 90%;
+}
+
+.contact-form {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#name-inp {
+  line-height: 30px;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Supreme", sans-serif;
+  text-align: start;
+  background-color: #03001c;
+  color: #e96b80;
+  border: 3px solid #e96b80;
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+}
+
+#email-inp {
+  line-height: 30px;
+  font-size: 20px;
+  width: 100%;
+  font-family: "Supreme", sans-serif;
+  text-align: start;
+  background-color: #03001c;
+  color: #e96b80;
+  border: 3px solid #e96b80;
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+}
+
+#body-inp {
+  font-size: 20px;
+  width: 100%;
+  font-family: "Supreme", sans-serif;
+  text-align: start;
+  background-color: #03001c;
+  color: #e96b80;
+  border: 3px solid #e96b80;
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+}
+
+#send-btn {
+  width: 100%;
+  line-height: 22px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Clash Display", sans-serif;
+  text-align: center;
+  background-color: #e96b80;
+  color: #03001c;
+  border: 3px solid #e96b80;
+  border-radius: 30px;
+  padding: 3px 10px 3px 10px;
+}
+#send-btn:hover {
+  background-color: #03001c;
+  color: #e96b80;
+}
+
+#contact-text {
+  font-family: "Clash Display", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #e96b80;
+  opacity: 70%; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #e96b80;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #e96b80;
+}
+#orientation-error {
+  font-family: "Clash Grotesk", sans-serif;
 }
