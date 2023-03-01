@@ -4,22 +4,20 @@ const blogOption = document.getElementById("blog");
 const betaMessage = document.getElementById("message");
 const messageClose = document.getElementById("xmark");
 const mainBlur = document.getElementById("main");
-sessionStorage.setItem("firstload", "true");
-// let loadStats = sessionStorage.getItem("firstload");
 window.addEventListener("load", function () {
+  console.log(sessionStorage.getItem("firstload"));
   this.setTimeout(preLoader, 1000);
   handImg.style.display = "none";
   if (sessionStorage.getItem("firstload") === "true") {
-    sessionStorage.setItem("firstload", "false");
-    let loadStats = sessionStorage.getItem("firstload");
-    console.log(loadStats);
+    betaMessage.style.display = "none";
+    console.log(sessionStorage.getItem("firstload"));
+  } else {
+    sessionStorage.setItem("firstload", true);
     mainBlur.classList.toggle("blur");
     messageClose.addEventListener("click", function () {
       betaMessage.style.display = "none";
       mainBlur.classList.toggle("blur");
     });
-  } else {
-    betaMessage.style.display = "none";
   }
 });
 
